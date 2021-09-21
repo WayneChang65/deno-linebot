@@ -14,7 +14,7 @@ Please refer to the official API documents for details.
 This is a [Deno](https://deno.land/) module available to import direct from this repo and via the [Deno Registry](https://deno.land/x).  
 Before importing, [download and install Deno](https://deno.land/#installation).  
 
-You can then import Opine straight into your project:
+You can then import linebot straight into your project:
 ```javascript
 import { linebot } from 'https://deno.land/x/linebot/mod.ts'
 ```  
@@ -64,7 +64,7 @@ deno run --allow-read --allow-env --allow-net --no-check https://deno.land/x/lin
 ```
 ### Or clone the linebot repo locally:
 ```console
-https://github.com/WayneChang65/deno-linebot.git
+git clone https://github.com/WayneChang65/deno-linebot.git
 cd deno-linebot
 deno run --allow-read --allow-env --allow-net --no-check ./examples/demo.js
 ```
@@ -91,7 +91,7 @@ const bot = linebot({
 Create [Opine](https://github.com/asos-craigmorten/opine) middleware to parse the request.
 
 The parser assumes that the request body has never been parsed by any body parser before,
-so it must be placed BEFORE any generic body parser e.g. `app.use(bodyParser.json());`
+so it must be placed BEFORE any generic body parser.
 
 ### LineBot.verify(rawBody, signature)
 

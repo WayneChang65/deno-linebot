@@ -1,7 +1,7 @@
 'use strict'
 import EventEmitter from "https://deno.land/x/events@v1.0.0/mod.ts";
 import debug from "https://deno.land/x/debuglog@v1.0.0/debug.ts";
-import { Buffer } from "http://deno.land/x/node_buffer@1.1.0/mod.ts";
+import { Buffer } from "https://deno.land/x/node_buffer@1.1.0/mod.ts";
 import { hmac } from "https://deno.land/x/hmac@v2.0.1/mod.ts";
 
 const debuglog = debug('linebot');
