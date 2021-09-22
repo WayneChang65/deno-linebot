@@ -29,7 +29,7 @@ import { linebot } from 'https://deno.land/x/linebot/mod.ts'
 ```javascript
 'use strict';
 import { linebot } from 'https://deno.land/x/linebot/mod.ts';
-import { opine, json } from 'https://deno.land/x/opine@1.7.2/mod.ts';
+import { opine, json } from 'https://deno.land/x/opine@1.8.0/mod.ts';
 
 const endpointToWebHook = 'webhook';
 const options = {
@@ -63,13 +63,13 @@ See [`examples`](examples) folder for more examples.
 ## Examples
 ### Run the example using Deno directly from GitHub, for example:
 ```console
-deno run --allow-read --allow-env --allow-net --no-check https://deno.land/x/linebot/examples/demo.js
+deno run --allow-read --allow-env --allow-net https://deno.land/x/linebot/examples/demo.js
 ```
 ### Or clone the linebot repo locally:
 ```console
 git clone https://github.com/WayneChang65/deno-linebot.git
 cd deno-linebot
-deno run --allow-read --allow-env --allow-net --no-check ./examples/demo.js
+deno run --allow-read --allow-env --allow-net ./examples/demo.js
 ```
 
 # API
@@ -563,6 +563,14 @@ This is a shorthand for: `LineBot.getMessageContent(event.message.messageId)`
 let content = await event.message.content();
 console.log(content.toString('base64'));
 ```
+
+# FAQ
+* It shows @ts-expect-error because of version of Deno std library.  
+**Solution**: Add `--no-check` in Deno command and wait for updating modules.. e.g. 
+```console
+deno run --allow-read --allow-env --allow-net --no-check https://deno.land/x/linebot/examples/demo.js
+```  
+
 # Contribution    
 Even though deno-linebot is a small project, I hope it can be improving. If there is any issue, please comment and welcome to fork for sending Pull Request. Thanks. :smile:  
 

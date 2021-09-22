@@ -1,7 +1,7 @@
 // DEBUG=* deno run --allow-read --allow-env --allow-net ./examples/echo-opine.js
 'use strict';
 import { linebot } from '../mod.ts'
-import { opine, json } from "https://deno.land/x/opine@1.7.2/mod.ts";
+import { opine, json } from "https://deno.land/x/opine@1.8.0/mod.ts";
 
 const endpointToWebHook = 'webhook';
 const options = {
