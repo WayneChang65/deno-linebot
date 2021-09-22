@@ -1,0 +1,25 @@
+{
+  "$schema": "https://x.nest.land/eggs@0.3.8/src/schema.json",
+  "name": "deno-linebot",
+  "entry": "./mod.ts",
+  "description": "🦕 SDK for the LINE Messaging API for Deno.",
+  "homepage": "https://github.com/WayneChang65/deno-linebot",
+  "version": "v1.1.0",
+  "releaseType": null,
+  "unstable": false,
+  "unlisted": false,
+  "files": [
+    "./img/*",
+    "./examples/*",
+    "LICENSE",
+    "README.md",
+    "deno-linebot.js"
+  ],
+  "ignore": [
+    "./.git*"
+  ],
+  "checkFormat": false,
+  "checkTests": false,
+  "checkInstallation": false,
+  "check": true
+}

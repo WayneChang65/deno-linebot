@@ -1,5 +1,6 @@
 # deno-linebot  
-<img align="right" src="https://raw.githubusercontent.com/WayneChang65/deno-linebot/master/img/deno.png" height="80px" width="80px" alt="the deno mascot dinosaur standing in the rain">  
+<a href="https://github.com/waynechang65/deno-linebot/tags/"><img src="https://img.shields.io/github/tag/waynechang65/deno-linebot" alt="Current version" /></a> <a href="https://github.com/denoland/deno/blob/main/Releases.md"><img src="https://img.shields.io/badge/deno-1.14.0-brightgreen?logo=deno" alt="Minimum supported Deno version" /></a> <a href="https://GitHub.com/waynechang65/deno-linebot/graphs/commit-activity"><img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" alt="deno-linebot is maintained" /></a> <img src="https://img.shields.io/github/license/waynechang65/deno-linebot" alt="deno-linebot license" /> <a href="https://nest.land/package/deno-linebot"><img src="https://nest.land/badge.svg" alt="Published on nest.land" /></a>   
+<img align="right" src="https://deno.land/logo.svg" height="80px" width="80px" alt="the deno mascot dinosaur standing in the rain">  
 
 🤖 SDK for the LINE Messaging API for [Deno](https://deno.land/).  
 - Support [Opine](https://github.com/asos-craigmorten/opine) framework which ported from [ExpressJS](https://github.com/expressjs/express) for Deno  
@@ -16,10 +17,15 @@ Before importing, [download and install Deno](https://deno.land/#installation).
 
 You can then import linebot straight into your project:  
 
-### Import form deno.land
+### Import form [deno.land](https://deno.land/)  
 ```javascript
 import { linebot } from 'https://deno.land/x/linebot/mod.ts'
-```    
+```  
+OR  
+### Import form [nest.land](https://nest.land/)  
+```javascript
+import { linebot } from 'https://x.nest.land/linebot/mod.ts'
+```  
 
 # Usage  
 :heavy_exclamation_mark: Notice: Check endpoint of the webhook is the same to 「Webhook URL」 of setting page to LINE Message API. (The demo is 'webhook')  
@@ -61,7 +67,7 @@ app.listen(port, () => console.log('LineBot is running. Port : ' + port));
 See [`examples`](examples) folder for more examples.  
 
 ## Examples
-### Run the example using Deno directly from GitHub, for example:
+### Run the example using Deno directly from deno.land or nest.land, for example:
 ```console
 deno run --allow-read --allow-env --allow-net https://deno.land/x/linebot/examples/demo.js
 ```
@@ -575,7 +581,7 @@ deno run --allow-read --allow-env --allow-net --no-check https://deno.land/x/lin
 Even though deno-linebot is a small project, I hope it can be improving. If there is any issue, please comment and welcome to fork for sending Pull Request. Thanks. :smile:  
 
 # Contributors  
-Special thanks to original designer of the linebot project. [boybundit/linebot][boybundit-linebot-url]  
+Special thanks to original designer of the node.js linebot project. [boybundit/linebot][boybundit-linebot-url]  
 
 # License  
   [MIT](LICENSE)
