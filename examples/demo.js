@@ -1,8 +1,8 @@
 // DEBUG=* deno run --allow-read --allow-env --allow-net ./examples/demo.js
 'use strict';
 import { linebot } from '../mod.ts'
-import { opine, json } from "https://deno.land/x/opine@1.7.2/mod.ts";
-import { bold, cyan, green, yellow } from "https://deno.land/std@0.105.0/fmt/colors.ts";
+import { opine, json } from "https://deno.land/x/opine@1.8.0/mod.ts";
+import { bold, cyan, green, yellow } from "https://deno.land/std@0.107.0/fmt/colors.ts";
 const endpointToWebHook = 'webhook';
 const options = {
    channelId: Deno.env.get('CHANNEL_ID'),
